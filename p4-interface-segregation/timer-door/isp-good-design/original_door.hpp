@@ -20,11 +20,6 @@ public:
   bool IsDoorOpen() override {
     return is_open;
   }
-  void Timeout() override {
-    if (is_open) {
-      std::cout << "Should not have timing" << std::endl;
-    }
-  }
 
 private:
   bool is_open = true;
