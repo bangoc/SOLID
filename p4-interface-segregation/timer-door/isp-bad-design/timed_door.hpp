@@ -17,7 +17,7 @@ public:
   void Unlock() override {
     std::cout << "Timed Door unlocked" << std::endl;
     is_open = true;
-    StartTiming(alarm_time_secs);
+    StartTiming(alarm_secs);
   }
   bool IsDoorOpen() override {
     return is_open;
@@ -31,7 +31,7 @@ public:
 
 private:
   bool is_open = true;
-  const int alarm_time_secs = 5;
+  const int alarm_secs = 5;
 };
 
 #endif  // TIMED_DOOR_HPP_
