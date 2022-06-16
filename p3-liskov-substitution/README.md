@@ -9,7 +9,7 @@ Nguyên lý khả thay Liskov / Liskov Substitution Principle
 Các định hướng:
 
 * Không tăng cường các tiền điều kiện trong lớp con.
-* Không nới lỏng tiền điều kiện trong lớp con.
+* Không nới lỏng hậu điều kiện trong lớp con.
 * Các bất biến của lớp cha cần được duy trì trong lớp con.
 
 ...
