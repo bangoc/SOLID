@@ -4,8 +4,9 @@
 
 int main() {
   auto fed = FrontEndDeveloper();
-  auto bed = FrontEndDeveloper();
-  Project<FrontEndDeveloper, BackEndDeveloper> prj{{fed, bed}};
+  auto bed = BackEndDeveloper();
+  auto nva = BackEndDeveloper();
+  Project<FrontEndDeveloper, BackEndDeveloper> prj{{fed, bed, nva}};
   prj.Deliver();
   return 0;
 }
