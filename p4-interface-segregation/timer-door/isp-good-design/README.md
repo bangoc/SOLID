@@ -1,7 +1,7 @@
 ## Thiết kế đáp ứng được nguyên lý phân tách giao diện
 
 <p align="center">
-  <img source="isp-good1.png" /> <br />
+  <img src="isp-good1.png" /> <br />
   Mở rộng <a href="timed_door.hpp">TimedDoor</a> với tính năng cảnh báo bằng quan hệ tổng hợp
 </p>
 
@@ -11,6 +11,6 @@ Trong thiết kế này, TimerClient được tổng hợp vào TimedDoor, lớp
 
 ## Một giải pháp khác sử dụng đa kế thừa
 <p align="center">
-  <img source="isp-good2.png" /> <br />
+  <img src="isp-good2.png" /> <br />
   Mở rộng <a href="timed_door.hpp">TimedDoor</a> bằng cách kế thừa <a href="timer_client.hpp">TimerClient</a>
 </p>

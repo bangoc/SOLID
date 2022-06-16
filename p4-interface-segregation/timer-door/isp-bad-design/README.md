@@ -1,7 +1,7 @@
 ## Thiết kế vi phạm nguyên lý phân tách giao diện
 
 <p align="center">
-  <img source="isp-bad.png" /> <br />
+  <img src="isp-bad.png" /> <br />
   Giao diện <a href="timer_client.hpp">TimerClient</a> là dư thừa đối với <a href="original_door.hpp">OriginalDoor</a>
 </p>
 
