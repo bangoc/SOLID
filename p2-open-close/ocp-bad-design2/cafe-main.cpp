@@ -1,9 +1,8 @@
 /* (C) Nguyen Ba Ngoc 2022 */
 
-#include "beverage.hpp"
-#include "decaf.hpp"
-#include "expresso.hpp"
-#include "house_blend.hpp"
+#include "decaf_with_soy.hpp"
+#include "expressor_with_whip_and_mocha.hpp"
+#include "house_blend_with_milk_and_mocha.hpp"
 
 #include <iostream>
 #include <memory>
@@ -11,22 +10,11 @@
 
 int main() {
   std::vector<std::shared_ptr<Beverage>> order;
-  Decaf *decaf = new Decaf();
-  decaf->set_soy(true);
-  order.push_back(std::shared_ptr<Beverage>(decaf));
-
-  Expresso *expresso = new Expresso();
-  expresso->set_whip(true);
-  expresso->set_mocha(true);
-  order.push_back(std::shared_ptr<Beverage>(expresso));
-
-
-  HouseBlend *hb = new HouseBlend();
-  hb->set_milk(true);
-  hb->set_mocha(true);
-  order.push_back(std::shared_ptr<Beverage>(hb));
+  order.push_back(std::make_shared<DecafWithSoy>());
+  order.push_back(std::make_shared<ExpressorWithWhipAndMocha>());
+  order.push_back(std::make_shared<HouseBlendWithMilkAndMocha>());
   for (auto item: order) {
-    std::cout << item->description() << ": "
+    std::cout << item->get_description() << ": "
               << item->cost() << std::endl;
   }
   return 0;

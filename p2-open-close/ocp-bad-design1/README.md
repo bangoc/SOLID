@@ -1,10 +1,10 @@
-# Một thiết kế không tốt
+# Một thiết kế không tốt khác
 
 <p align="center">
-    <img src="ocp-bad1.png" /><br />
-Mỗi tổ hợp thành phần là 1 lớp
+    <img src="ocp-bad2.png" /><br />
+Lớp cha bao quát thành phần thêm vào
 </p>
 
-Với thiết kế này, đồ uống cụ thể với các thứ thêm vào cụ thể sẽ được biểu diễn bằng 1 lớp riêng kế thừa Beverage rồi sau đó tự thiết lập mô tả trong description và định nghĩa lại cost.
+Trong thiết kế này lớp Beverage có thiết kế không tốt, là hỗn hợp của nhiều tập đối tượng.
 
-Tuy vẫn có thể mở rộng mà không thay đổi mã nguồn đã có, nhưng sẽ cần rất nhiều lớp cho tất cả các tổ hợp của đồ uống và những cái thêm vào. Bên cạnh đó các lớp đồ uống cũng phụ thuộc vào các thành phần của nó, ví dụ khi giá sữa thay đổi thì phương thức tính giá trong các lớp cũng phải được cập nhật theo.
+Để đáp ứng các thay đổi yêu cầu bổ xung thành phần mới, cho phép gọi 2 sữa v.v.. Chúng ta vẫn phải thay đổi mã nguồn đã có.

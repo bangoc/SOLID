@@ -3,7 +3,9 @@
 * Để mở khả năng mở rộng và
 đóng cửa đối với các thay đổi. *
 
-*Các thành phần phần mềm cần được để mở khả năng mở rộng, nhưng được đóng đối với thay đổi.*
+*Các thành phần phần mềm cần được để mở khả năng mở rộng, nhưng được đóng đối với thay đổi. /*
+
+*"Software entities should be open for extension, but closed for modifications."*
 
 <p align="right">[Bertrand Meyer]</p>
 
@@ -12,3 +14,6 @@
 *"Đóng cửa đối với thay đổi" / "Closed for modification". Mở rộng hành vi của 1 thành phần không dẫn đến thay đổi mã nguồn hoặc mã nhị phân của thành phần đó. Phiên bản nhị phân thực thi của mô-đun đó, dù là 1 thư viện, 1 DLL, hoặc 1 tệp jar của Java, được giữ nguyên không thay đổi.*
 
 <p align="right">[Robert C.Martin]</p>
+
+*Các thành phần phần mềm cần có khả năng mở rộng mà không thay đổi.*
+
